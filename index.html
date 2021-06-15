@@ -7,10 +7,145 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responsive Cake webpage</title>
     <!-- Add a link to your css file here -->
+    <link rel="stylesheet" href="../HTML-CSS-Coursework-Week3/style.css">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+      <!-- header start -->
+  <header id="header" >    
+    <img id= "header-img" src ="https://www.cakeshopco.com/img/logo.png" alt="shop sweet cake logo"/><!--  header logo -->
+
+    <div> <!--menu_hamburger for small screen-->
+    <button class="hamburger" id="hamburger" > 
+        <img src="../HTML-CSS-Coursework-Week3/design/menu-hamburger.svg" alt="menu icon" />
+    </button >
+</div>
+</header>
+
+<div> <!--start nav-bar in the header for large screen-->
+
+    <nav id="nav-bar">
+       <ul>
+         <li><a class="nav-link" href="#email-form">Home</a></li>
+         <li><a class="nav-link" href="#aboutus">About us</a></li>
+         <li><a class="nav-link" href="#menue">Menue</a></li>
+         <li><a class="nav-link" href="#contact">Contact</a></li>
+         <li> <input id="search" type="text" placeholder="search.."   />  </li>
+         </ul>
+     </nav>
+   </div><!--end nav-bar in the header-->
+
+    <!--start email form -->
+    <section id="email-form" >
+        <h2 style="color:#909; font-size:30px;">Take pice of cake <br/> And Be Our Customer </h2> 
+        <form id="form"       action="https://codepen.io/your-work/">    
+     <input name="email" id="email" type="email" placeholder="username@exampel.com" required />
+      <input id="submit" type="submit" value="SEND"  class="send-btn" style="background-color:#f0f;" />  </form>
+          </section>
+     <!--end email form -->
+
+
+      <!-- about us  --> 
+      <section id="aboutus">
+         <div class="aboutus">
+            <h2> ABUT US...</h2> <br/>
+   <p >The "Cake Shop" is an idea that started as a small family business.<br/>
+after that its becom a project supported by a staff of 30 employees.<br/>
+Although not small any more, the business tries to keep the family<br/> atmosphere where we care not only about  our products and our staff<br/> but also we consider each "customer" a member in this family of "cake shop".<br/>Our mission is to make people happy. Making delicious cakes<br/> having relaxing chairs in a smoking free environment<br/> and keeping our prices reasonable are all different ways to achieve this goal.<br/> You can choose the cake design you like from this page, and we will make it with love and care </p>
+  <br/>
+             
+        <iframe id="video" width="400" height="200" src="https://www.youtube.com/embed/P8CInQhF9bI"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+          
+         </div>  
+         
+ </section><!--About Us end -->
+
+  <!--menue start -->
+  <section id="menue" >
+    <h2> The Menue </h2>
+    <div class="larg-level" ><!-- start div id=menue -->
+      <div class="flex-box">  
+          <div class="cake"><!-- start choclate cake -->
+            <h3> Choclate Cake</h3>
+      <img class="iamge" src="https://www.mybakingaddiction.com/wp-content/uploads/2011/10/lr-0938-700x1050.jpg.webp"   
+           alt="choclate cake" />
+      <h4>price 100 </h4>
+      <div class="btn" >
+        <input class="submit" type="submit" value="SELECT"  style="background-color:#f0f;" />
+      </div> 
+      </div><!--end choclate cake -->
+      
+      <div class="cake"><!-- strawberry cake -->
+       <h3> Strawberry Cake</h3>
+      <img class="iamge" src="https://livforcake.com/wp-content/uploads/2017/02/chocolate-strawberry-cake-thumb.jpg" 
+           alt="Strawberry cake" />
+           <h4>price 100 </h4>
+      <div class="btn" >
+        <input class="submit" type="submit" value="SELECT"   style="background-color:#f0f;" />
+      </div> 
+    </div><!--end strawberry cake -->
+      </div>
+
+      <div class="flex-box"> 
+     <div class="cake"><!-- vanilla cake -->
+           <h3> Vanilla Cake</h3>
+      <img class="iamge" src="https://livforcake.com/wp-content/uploads/2017/06/vanilla-cake-thumb.jpg"
+           alt="Vanilla cake"   />
+           <h4>price 100 </h4>
+      <div class="btn" >
+        <input class="submit" type="submit" value="SELECT"  style="background-color:#f0f;"/>
+      </div>
+      </div><!--end vanilla cake -->
+      <br/>
+       <div class="cake"><!-- rainbow cake -->
+           <h3> Rainbow Cake</h3>
+      <img class="iamge" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExZ7Tne7-OmChpsyL7IVeYw3lkqbJMxMnCA&usqp=CAU"
+           alt="rainbow cake"  />
+           <h4>price 100 </h4>
+      <div class="btn" >
+        <input class="submit" type="submit" value="SELECT"  style="background-color:#f0f;"/>
+      </div>
+    </div><!--end rainbow cake -->
+      </div>
+        <!-- Fruit cake -->
+        <div class="cake">
+           <h3> Fruit Cake</h3>
+      <img class="iamge" src="https://tatyanaseverydayfood.com/wp-content/uploads/2018/07/Summer-Sangria-Cake-4.jpg"
+           alt="Fruit cake"   />
+           <h4>price 100 </h4>
+      <div class="btn" >
+        <input class="submit" type="submit" value="SELECT"  style="background-color:#f0f;"/>
+      </div>
+    </div><!--end Fruit cake -->
+    </div>
+    </div> <!-- end div id=menue -->
+  </section><!--menue end -->
+
+  
+           
+   <footer>
+    <h2> Contact-Us:</h2> <!--contat section start -->
+<section id="contact" >
+ 
+
+ <ul id="a-contact">
+  <li> <a  href="#" target="_blank">
+     <img  alt="Facebook icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/256px-Facebook_icon.svg.png" style="height:50px;
+width:50px;"/></a></li>
+   
+<li> <a  href="#" target="_blank">
+     <img  alt="Whatsapp" src="https://i.pinimg.com/originals/e5/89/38/e589388eb222889b1771b439a51510bb.png" style="height:50px; width:50px;"/></a> </li>
+ </ul>
+
+    <!-- shop position link -->
+    <a  href="https://www.google.com.sa/maps"
+    target="_blank"><h1 style="background-color:#FFCCFF">Click To Visite Our shop  </h1> </a><!--end shop position link -->
+</section><!--contat section end -->
+<span>Copyright 2020, The Cake Shop</span>
+   </footer>
+
+</div> <!--end wrapper div --> 
+
 </body>
 
 </html>
